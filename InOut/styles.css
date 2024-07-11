@@ -1,63 +1,90 @@
-*{
+* {
     text-decoration: none;
+    margin: 0%;
+    border-radius: 5px;
 }
+
 :root {
     --color1: #ffffff;
     --color2: #000000;
     --color3: #45a049;
     --color4: #7094f1;
     --color5: #4b4b4b;
-    --color6: #7d0808;
+    --color6: #b60000;
     --color7: #000010;
 }
+
 body {
     width: 99%;
-    height: 99%;
     background-color: var(--color1);
     color: var(--color2);
     font-family: sans-serif;
     font-size: 112%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-a{
+
+a {
     color: var(--color2);
 }
+
+main {
+    width: 100%;
+    width: 100%;
+}
+
 .container {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color:var(--color1);
-    padding: 20px;
+    background-color: var(--color1);
+    padding: 0 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--color2);
 }
-h1{
-    color:var(--color3);
+
+.title {
+    color: var(--color3);
 }
-header{
+
+.title2 {
+    color: var(--color3);
+}
+
+header {
     justify-content: space-between;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
-.hr{
+
+.hr {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
-    
+
 }
+
 h2 {
     text-align: center;
     color: var(--color5);
 }
+
 label {
     font-weight: bold;
 }
-input[type=text], input[type=email], input[type=date] {
+
+input[type=text],
+input[type=email],
+input[type=date] {
     width: calc(100% - 20px);
     padding: 8px;
-    margin: 8px ;
+    margin: 8px;
     border: 1px solid var(--color2);
     border-radius: 4px;
 }
+
 input[type=submit] {
     background-color: var(--color3);
     color: var(--color1);
@@ -67,14 +94,12 @@ input[type=submit] {
     cursor: pointer;
     float: right;
 }
+
 input[type=submit]:hover {
     background-color: var(--color3);
 }
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
+
+
 .hotel {
     background-color: var(--color1);
     margin-bottom: 20px;
@@ -84,21 +109,26 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
 }
+
 .hotel img {
     width: 50%;
     height: auto;
 }
+
 .hotel-info {
     padding: 20px;
 }
+
 .hotel-info h2 {
     color: var(--color5);
     margin-bottom: 10px;
 }
+
 .hotel-info p {
     color: var(--color5);
     line-height: 1.6;
 }
+
 .cta-button {
     display: inline-block;
     background-color: var(--color3);
@@ -108,34 +138,47 @@ input[type=submit]:hover {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
+
 .cta-button:hover {
     background-color: var(--color3);
 }
+
 footer {
-    background-color: var(--color1);
-    color: var(--color2);
+    position: fixed;
+    background-color: var(--color7);
+    color: var(--color1);
     text-align: center;
     padding: 10px 0;
-    bottom: 0;
+    bottom: 0px;
+    border-radius: 0px;
     width: 100%;
 }
+
+footer p {
+    margin: 0;
+}
+
 .sidebar {
-    background-color:var(--color3);
-    color: var(--color1);
+    background-color: var(--color3);
     width: 250px;
-    height: 100vh; /* 100% da altura da viewport */
+    height: 100vh;
+    /* 100% da altura da viewport */
     padding: 20px;
-    box-sizing: border-box; /* Para incluir padding na largura */
+    box-sizing: border-box;
+    /* Para incluir padding na largura */
     position: fixed;
-    right: -230px; /* Inicialmente esconde a barra lateral */
+    right: -230px;
+    /* Inicialmente esconde a barra lateral */
     top: 0;
-    transition: right 0.3s ease; /* Transição suave para a animação */
+    transition: right 0.3s ease;
+    /* Transição suave para a animação */
 }
 
 .sidebar h2 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
+    color: var(--color1);
 }
 
 .sidebar input[type="text"] {
@@ -170,13 +213,151 @@ footer {
 .content {
     flex: 1;
     padding: 20px;
-    transition: margin-right 0.3s ease; /* Transição suave para o conteúdo */
+    transition: margin-right 0.3s ease;
+    /* Transição suave para o conteúdo */
 }
 
 .sidebar:hover {
-    right: 0; /* Mostra a barra lateral quando o mouse passa por cima */
+    right: 0;
+    /* Mostra a barra lateral quando o mouse passa por cima */
 }
 
-.sidebar:hover + .content {
-    margin-right: 200px; /* Desloca o conteúdo para a direita */
+.sidebar:hover+.content {
+    margin-right: 200px;
+    /* Desloca o conteúdo para a direita */
+}
+
+.loginBox {
+    background-color: var(--color1);
+    border-radius: 8px;
+    border-bottom: 100px;
+    box-shadow: 0 0 10px var(--color5);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    height: 100%;
+    flex-direction: row;
+    width: 999%;
+    height: 999%;
+}
+
+.hr2 {
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 200%;
+    background-color: var(--color3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.main-content h2 {
+    color: #1B6C0D;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--color5);
+    border-radius: 4px;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    background-color: var(--color3);
+    color: var(--color1);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: var(--color3);
+}
+#reservas {
+    margin-bottom: 20px;
+}
+
+.reserva {
+    border: 1px solid var(--color3);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.reserva p {
+    margin: 5px 0;
+}
+
+.btn-cancelar {
+    background-color: var(--color6);
+    color: var(--color1);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-cancelar:hover {
+    background-color: var(--color6);
+}
+.search-container {
+    display: flex;
+    max-width: 400px; /* largura máxima da barra de pesquisa */
+    margin: 0 auto;
+    border: 1px solid var(--color5);
+    border-radius: 5px; /* centralizar na página */
+}
+
+.search-container input[type="text"] {
+    flex: 1; /* o campo de entrada ocupa o espaço disponível */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color1);
+    border-radius: 4px 0 0 4px; /* bordas arredondadas à esquerda */
+    outline: none; /* remove o contorno padrão ao focar */
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: var(--color3); /* cor de fundo do botão */
+    color: var(--color1); /* cor do texto */
+    border: 1px solid var(--color3);
+    border-radius: 0 4px 4px 0; /* bordas arredondadas à direita */
+    cursor: pointer;
+    outline: none; /* remove o contorno padrão ao focar */
+}
+
+.search-container button:hover {
+    background-color: var(--color3); /* alteração de cor ao passar o mouse */
+    border-color: var(--color3);
 }

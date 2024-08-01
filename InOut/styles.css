@@ -361,3 +361,42 @@ footer p {
     background-color: var(--color3); /* alteração de cor ao passar o mouse */
     border-color: var(--color3);
 }
+input[type="password"] {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+li.valid {
+    color: green;
+}
+
+li.invalid {
+    color: red;
+}
+.dark-theme body {
+    background-color:var(--color7);
+    color: #ffffff;
+  }
+.dark-theme main {
+    background-color:var(--color7);
+    color: #ffffff;
+  }
+.dark-theme div {
+    background-color:var(--color7);
+    color: #ffffff;
+  }
+.dark-theme p {
+    background-color:var(--color7);
+    color: #ffffff;
+  }
+  .dark-theme h2 {
+    background-color:var(--color7);
+    color: #ffffff;
+  }
+.dark-theme a {
+    color: #ffffff;
+  }
+  

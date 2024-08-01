@@ -13,12 +13,13 @@
         <div class="hr"><a href="index.html">
                 <h1 class="title">In Out</h1>
             </a></div>
-            <div class="btn">
-                <i class="bi bi-list"></i>
-            </div>
-            <nav>
+        <div class="btn">
+            <i class="bi bi-list"></i>
+        </div>
+        <nav>
             <div class="sidebar" id="sidebar">
                 <h2>Menu</h2>
+                <button onclick="toggleDarkTheme()">Alternar Tema</button>
                 <ul>
                     <li><a href="index.html">Hotéis</a></li>
                     <li><a href="checkin.html">Check-in/Check-out</a></li>
@@ -30,20 +31,20 @@
         </nav>
     </header>
     <hr />
-    
+
     <main>
-        
+
         <label for="tipo-quarto">Tipo de Quarto:</label>
-                <select id="tipo-quarto" name="tipo_quarto" required>
-                    <option value="">Selecione o tipo</option>
-                    <option value="standard">Standard</option>
-                    <option value="luxo">Luxo</option>
-                    <option value="suíte">Suíte</option>
-                </select>
-                <label for="num-pessoas">Número de Pessoas:</label>
-                <input type="number" id="num-pessoas" name="num_pessoas" min="1" required>
-                <br/>
-                <br/>
+        <select id="tipo-quarto" name="tipo_quarto" required>
+            <option value="">Selecione o tipo</option>
+            <option value="standard">Standard</option>
+            <option value="luxo">Luxo</option>
+            <option value="suíte">Suíte</option>
+        </select>
+        <label for="num-pessoas">Número de Pessoas:</label>
+        <input type="number" id="num-pessoas" name="num_pessoas" min="1" required>
+        <br />
+        <br />
         <div class="hotel">
             <img src="image/hotel.jpg" alt="Hotel 1">
             <div class="hotel-info">
@@ -77,6 +78,7 @@
     <footer>
         <p>&copy; 2024 In Out. Todos os direitos reservados.</p>
     </footer>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

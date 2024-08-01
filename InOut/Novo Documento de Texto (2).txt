@@ -1,0 +1,17 @@
+GERAL
+
+tema escuro
+filtro
+validação de senha
+Cliente
+
+RESTRIÇÃO DE IDADE
+
+exigencia de senha
+validação de cpf
+Xfunção de formulario
+
+HOTEL
+
+Xvalidação de cep
+Xvaçidação de cnpj
